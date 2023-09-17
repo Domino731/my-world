@@ -1,5 +1,5 @@
-import {CpHeader} from "../cyberpunk/header/CpHeader.tsx";
+import {Header} from "./sections/Header";
 
 export const App = () => {
-    return <CpHeader/>
+    return <Header/>
 }
