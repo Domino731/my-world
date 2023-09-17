@@ -12,9 +12,21 @@
 
 .list {
   display: flex;
+  height: 40px;
+  position: relative;
+  clip-path: polygon(13.3333333333px 0,100% 0,100% 25px,calc(100% - 15px) 40px,calc(100% - 15px) 2000%,0 2000%,0 13.3333333333px);
+  &::before {
+    border-right: 15px solid transparent;
+    border-top: 15px solid $yellow;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+}
 }
 
 .listItem {
+  height: 100%;
 }
 
 .listItemContact {
@@ -22,16 +34,32 @@
 }
 
 .link {
-  display: block;
-    color: $white;
-  font-size: 0.22em;
-  padding: 0.5em 1em;
+  color: $white;
+  font-size: 0.18em;
+  padding: 0 1em;
   border-top: 1px solid $yellow;
   border-bottom: 1px solid $yellow;
-
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
   &:hover {
     background: $yellow;
     color: $black;
     cursor: pointer;
   }
+}
+
+.linkLastItem {
+    color: $black;
+    background: $yellow;
+  border: none;
+}
+
+.linkFirstItem {
+  border-left: 1px solid $yellow;
+}
+
+.listDashBox {
+  height: 40px;
 }
