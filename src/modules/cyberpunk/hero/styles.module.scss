@@ -1,0 +1,19 @@
+.container {
+    background: url(../../../assets/cyberpunk/images/hero.jpg);
+    background-size: cover;
+    height: calc(100vh);
+    position: relative;
+  &::before {
+    background-image: url(../../../assets/cyberpunk/images/dots-top.png),url(../../../assets/cyberpunk/images/dots-bottom.png);
+    background-position: 20px 20px,20px calc(100% - 20px);
+    background-repeat: repeat-x,repeat-x;
+    content: "";
+    display: block;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+}

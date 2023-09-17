@@ -1,7 +1,6 @@
 @import "../variables";
 
 .container {
-  background: $black;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -11,6 +10,7 @@
 }
 
 .list {
+    background: $background-opacity;
   display: flex;
   height: 40px;
   position: relative;
