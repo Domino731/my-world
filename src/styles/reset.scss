@@ -46,3 +46,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@font-face {
+  font-family: 'Blender Pro Book';
+  src: url(../assets/fonts/blenderProBook/BlenderPro-Book.woff2) format('woff2'),
+       url(../assets/fonts/blenderProBook/BlenderPro-Book.woff) format('woff');
+  /* Add more file formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the font for specific elements */
+body {
+  font-family: 'Blender Pro Book';
+}

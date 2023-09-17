@@ -1,3 +1,5 @@
+import {CpHeader} from "../cyberpunk/header/CpHeader.tsx";
+
 export const App = () => {
-    return <div>HELLO</div>
+    return <CpHeader/>
 }

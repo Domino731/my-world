@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Blender Pro Book';
+  src: url('blenderProBook/BlenderPro-Book.woff2') format('woff2'),
+       url('blenderProBook/BlenderPro-Book.woff') format('woff');
+  /* Add more file formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the font for specific elements */
+body {
+  font-family: 'Blender Pro Book', sans-serif;
+}
