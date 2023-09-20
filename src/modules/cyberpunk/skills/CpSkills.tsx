@@ -16,6 +16,12 @@ export const CpSkills = () => {
                 </h3>
                 <div className={styles.skillsBoxWrapper}>
                     <div className={styles.skillsBox}>
+                        <div className={styles.dataHeaderRow}>
+                                       <p className={`${styles.dataHeader} ${styles.dataHeaderIcon}`}>_ICON</p>
+                        <p className={`${styles.dataHeader} ${styles.dataHeaderTitle}`}>_TITLE</p>
+                        <p className={`${styles.dataHeader} ${styles.dataHeaderExp}`}>_EXP</p>
+                        </div>
+
                         <div>
                             {SKILLS_DATA.map(({icon, title}) => <div className={styles.hardSkillRow}>
                                 <div className={styles.iconBox}>

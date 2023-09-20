@@ -153,3 +153,26 @@ display: flex;
   background: $light-blue;
   clip-path: polygon(0% 0%, 0% 100%, 70% 100%, 100% 70%, 100% 0%)
 }
+
+.dataHeaderRow {
+  display: flex;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.dataHeader {
+  display: block;
+  color: $grey;
+}
+
+.dataHeaderIcon {
+  width: 46px;
+}
+.dataHeaderTitle {
+      padding-left: 12px;
+}
+
+.dataHeaderExp {
+  position: absolute;
+  right: 0;
+}
