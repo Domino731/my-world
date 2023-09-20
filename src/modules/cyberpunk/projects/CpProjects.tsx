@@ -10,5 +10,17 @@ export const CpProjects = () => {
         <SectionTitle title="PROJECTS" color={cpStyles.black}/>
         <Title title="PROJECTS"/>
         <SubTitle title="The most important part of being a programmer. I put my heart into it, and user experience at first place."/>
+        <div className={styles.content}>
+            <div className={styles.projectsList}>
+                <h3 className={`${styles.projectsListTitle} ${styles.projectsListTitleCommercial}`}>
+                    COMMERCIAL
+                    <span/>
+                    <span/>
+                </h3>
+                <ul className={`${styles.projectsList} ${styles.projectsListCommercial}`}>
+                    <li className={styles.projectsListItem}>mAnalyser</li>
+                </ul>
+            </div>
+        </div>
     </section>
 }
