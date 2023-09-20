@@ -3,6 +3,7 @@ import {SectionTitle} from "../components/SectionTitle";
 import {cpStyles} from "../styles/variables.ts";
 import {Title} from "../components/Title";
 import {SubTitle} from "../components/SubTitle/SubTitle.tsx";
+import {DataHeader} from "../components/DataHeader";
 
 export const CpProjects = () => {
     return <section className={styles.container}>
@@ -19,7 +20,11 @@ export const CpProjects = () => {
                 </h3>
                 <ul className={`${styles.list} ${styles.projectsListCommercial}`}>
                     <li className={styles.projectsListItem}>
-                               <div className={styles.projectsListItemContent}></div>
+                               <div className={styles.projectsListItemContent}>
+                                   <DataHeader title="_PROJECT_TITLE"/>
+                                   <DataHeader title="_PROJECT_DESCRIPTION"/>
+                                   <DataHeader title="_PROJECT_LINK"/>
+                               </div>
                     </li>
                 </ul>
             </div>
