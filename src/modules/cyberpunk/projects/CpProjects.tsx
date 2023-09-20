@@ -17,8 +17,10 @@ export const CpProjects = () => {
                     <span/>
                     <span/>
                 </h3>
-                <ul className={`${styles.projectsList} ${styles.projectsListCommercial}`}>
-                    <li className={styles.projectsListItem}>mAnalyser</li>
+                <ul className={`${styles.list} ${styles.projectsListCommercial}`}>
+                    <li className={styles.projectsListItem}>
+                               <div className={styles.projectsListItemContent}></div>
+                    </li>
                 </ul>
             </div>
         </div>
