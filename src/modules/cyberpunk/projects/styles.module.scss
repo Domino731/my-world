@@ -1,0 +1,12 @@
+@import "../variables";
+
+.container {
+  background: $yellow;
+}
+
+.divider {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border-top: 2px solid $grey-dark;
+}
