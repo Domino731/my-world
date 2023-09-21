@@ -4,6 +4,7 @@ import {cpStyles} from "../styles/variables.ts";
 import {Title} from "../components/Title";
 import {SubTitle} from "../components/SubTitle/SubTitle.tsx";
 import {DataHeader} from "../components/DataHeader";
+import {commercialProjects} from "../../app/sections/Projects/Projects.const.ts";
 
 export const CpProjects = () => {
     return <section className={styles.container}>
@@ -19,13 +20,16 @@ export const CpProjects = () => {
                     <span/>
                 </h3>
                 <ul className={`${styles.list} ${styles.projectsListCommercial}`}>
-                    <li className={styles.projectsListItem}>
-                               <div className={styles.projectsListItemContent}>
-                                   <DataHeader title="_PROJECT_TITLE"/>
-                                   <DataHeader title="_PROJECT_DESCRIPTION"/>
-                                   <DataHeader title="_PROJECT_LINK"/>
-                               </div>
-                    </li>
+                    {commercialProjects.map(({title, description, linkTitle}) =>                     <li className={styles.projectsListItem}>
+                        <div className={styles.projectsListItemContent}>
+                            <DataHeader title="_PROJECT_TITLE"/>
+                            <p className={`${styles.projectText} ${styles.projectTitle}`}>{title}</p>
+                            <DataHeader title="_PROJECT_DESCRIPTION"/>
+                            <p className={`${styles.projectText} ${styles.projectDescription}`}> {description}</p>
+                            <DataHeader title="_PROJECT_LINK"/>
+                            <p className={`${styles.projectText} ${styles.projectDescription}`}>{linkTitle}</p>
+                        </div>
+                    </li>)}
                 </ul>
             </div>
         </div>
