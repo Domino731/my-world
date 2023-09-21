@@ -8,7 +8,10 @@ import {commercialProjects} from "../../app/sections/Projects/Projects.const.ts"
 
 export const CpProjects = () => {
     return <section className={styles.container}>
-        <span className={styles.divider}></span>
+        <div className={styles.divider}>
+            <span/>
+            <span/>
+        </div>
         <SectionTitle title="PROJECTS" color={cpStyles.black}/>
         <Title title="PROJECTS"/>
         <SubTitle title="The most important part of being a programmer. I put my heart into it, and user experience at first place."/>
