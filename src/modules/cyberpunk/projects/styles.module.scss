@@ -66,7 +66,8 @@ clip-path: polygon(0% calc(100% - 32px), 32px 100%, 100% 100%, 100% 32px, calc(1
   justify-content: center;
   align-items: center;
   background: $red;
-clip-path: polygon(0% 100%, calc(100% - 34px) 100%, 100% calc(100% - 34px), 100% 0%, calc(100% - 22px) 0%, 0% 0%);
+//clip-path: polygon(0% 100%, calc(100% - 34px) 100%, 100% calc(100% - 34px), 100% 0%, calc(100% - 22px) 0%, 0% 0%);
+  clip-path: polygon(0% calc(100% - 12px), 12px 100%, calc(100% - 42px) 100%, 100% calc(100% - 42px), 100% 12px, calc(100% - 12px) 0%, 12px 0%, 0% 12px);
   position: relative;
 }
 
@@ -75,7 +76,7 @@ clip-path: polygon(0% 100%, calc(100% - 34px) 100%, 100% calc(100% - 34px), 100%
   width: 100%;
   height: 100%;
   background: $black;
-clip-path: polygon(0% 100%, calc(100% - 34px) 100%, 100% calc(100% - 34px), 100% 0%, calc(100% - 22px) 0%, 0% 0%);
+  clip-path: inherit;
 }
 
 .projectText {
