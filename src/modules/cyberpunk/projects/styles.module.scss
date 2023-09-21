@@ -33,6 +33,13 @@
   background: $red;
 }
 
+.projectsListTitleOwn {
+  clip-path: polygon(32px 0%, 0% 32px, 0% calc(100% - 12px), 12px 100%, calc(100% - 32px) 100%, 100% calc(100% - 32px), 100% 12px, calc(100% - 12px) 0%);
+  background: $light-blue;
+  text-align: right;
+  padding-right: 32px;
+}
+
 .projectsList {
   width: 50%;
   position: relative;
@@ -49,7 +56,6 @@
   justify-content: center;
   align-items: center;
   background: $red;
-//clip-path: polygon(0% 100%, calc(100% - 34px) 100%, 100% calc(100% - 34px), 100% 0%, calc(100% - 22px) 0%, 0% 0%);
   clip-path: polygon(0% calc(100% - 12px), 12px 100%, calc(100% - 42px) 100%, 100% calc(100% - 42px), 100% 12px, calc(100% - 12px) 0%, 12px 0%, 0% 12px);
   position: relative;
 }
@@ -69,6 +75,7 @@
 
 .projectTitle {
   font-size: 32px;
+  font-weight: bold;
   letter-spacing: 0.1em;
 }
 
