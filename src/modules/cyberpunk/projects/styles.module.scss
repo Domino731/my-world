@@ -38,11 +38,23 @@
   background: $light-blue;
   text-align: right;
   padding-right: 32px;
+  transform: translate(31px, 0px);
 }
 
 .projectsList {
-  width: 50%;
+  width: 60%;
   position: relative;
+}
+
+.commercialProjects {
+  padding-left: 72px;
+}
+
+.ownProjects {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 72px;
+  margin-top: 64px;
 }
 
 .projectsListCommercial {
@@ -58,6 +70,12 @@
   background: $red;
   clip-path: polygon(0% calc(100% - 12px), 12px 100%, calc(100% - 42px) 100%, 100% calc(100% - 42px), 100% 12px, calc(100% - 12px) 0%, 12px 0%, 0% 12px);
   position: relative;
+}
+
+.projectsListItemOwn {
+  clip-path: polygon(0% calc(100% - 42px), 42px 100%, calc(100% - 13px) 100%, 100% calc(100% - 12px), 100% 12px, calc(100% - 12px) 0%, 12px 0%, 0% 12px);
+  background: $light-blue;
+  text-align: right !important;
 }
 
 .projectsListItemContent {
@@ -82,4 +100,8 @@
 .projectDescription {
   text-align: justify;
   line-height: 1.4em;
+}
+
+.ownProjectLink {
+  text-align: right;
 }
