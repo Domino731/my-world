@@ -1,0 +1,25 @@
+@import "../variables";
+.container {
+  background: $red;
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+}
+
+.dividerBg {
+  height: 48px;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $yellow;
+}
+
+.divider {
+  height: 48px;
+  display: block;
+  width: 100%;
+  background: url(../../../assets/cyberpunk/images/razor-red.svg);
+  position: relative;
+}

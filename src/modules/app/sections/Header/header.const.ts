@@ -14,7 +14,7 @@ export const headerOptions: Array<HeaderOption> = [
         href: "#"
     },
     {
-        label: "Contact",
+        label: "Contact.tsx",
         href: "#"
     },
 ]

@@ -3,6 +3,7 @@ import {Hero} from "./sections/Hero/Hero.tsx";
 import {AboutMe} from "./sections/AboutMe";
 import {Skills} from "./sections/Skills";
 import {Projects} from "./sections/Projects";
+import {Contact} from "./sections/Contact";
 
 export const App = () => {
     return <>
@@ -11,5 +12,6 @@ export const App = () => {
         <AboutMe/>
         <Skills/>
         <Projects/>
+        <Contact/>
     </>
 }
