@@ -29,25 +29,8 @@
 .projectsListTitleCommercial {
   text-align: left;
   padding-left: 32px;
-clip-path: polygon(0% calc(100% - 32px), 32px 100%, 100% 100%, 100% 32px, calc(100% - 32px) 0%, 0% 0%);
+  clip-path: polygon(0% calc(100% - 32px), 32px 100%, calc(100% - 12px) 100%, 100% calc(100% - 12px), 100% 32px, calc(100% - 32px) 0%, 12px 0%, 0% 12px);
   background: $red;
-  //span:first-child {
-  //  width: 30px;
-  //  height: 30px;
-  //  top: -25px;
-  //  left: -18px;
-  //  transform: rotate(45deg);
-  //  background: #000000;
-  //}
-  //
-  //span:last-child {
-  //   width: 30px;
-  //  height: 30px;
-  //  bottom: -21px;
-  //  left: -21px;
-  //  transform: rotate(45deg);
-  //  background: #000000;
-  //}
 }
 
 .projectsList {
