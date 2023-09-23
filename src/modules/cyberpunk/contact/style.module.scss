@@ -48,6 +48,9 @@
   font-weight: bold;
   background: transparent;
   position: relative;
+  &:disabled {
+    opacity: 0.6;
+  }
   &::after {
     content: "";
     display: block;
@@ -104,4 +107,9 @@
   position: absolute;
   transform: translate(10px, 8px);
   transition: all .3s ease;
+}
+
+.labelActive {
+  transform: translate(0px, -23px);
+  font-size: 18px;
 }
