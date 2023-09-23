@@ -23,3 +23,85 @@
   background: url(../../../assets/cyberpunk/images/razor-red.svg);
   position: relative;
 }
+
+.form {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.inputsWrapper {
+  width: 70%;
+  padding-right: 32px;
+}
+
+.buttonWrapper {
+  flex-grow: 1;
+}
+
+.button {
+  width: 100%;
+  border: 2px solid $black;
+  font-size: 22px;
+  height: 40px;
+  clip-path: polygon(0% 100%, calc(100% - 20px) 100%, 100% calc(100% - 20px), 100% 0%, 0% 0%);
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    right: -5px;
+    transform: rotate(-45deg);
+    width: 28px;
+    height: 2px;
+    background: $black;
+  }
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+
+  input, textarea, label {
+    width: 100%;
+  }
+
+  textarea:focus ~ label, input:focus ~ label {
+    transform: translate(0px, -23px);
+    font-size: 18px;
+  }
+
+  &:focus-within label {
+    transform: translate(0, 12px) scale(0.8);
+  }
+}
+
+.inputContainerTextarea {
+  margin-top: 32px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid $black;
+  height: 40px;
+  font-size: 24px;
+  padding: 0 2px;
+}
+
+.inputTextarea {
+  height: 200px;
+  resize: none;
+}
+.label {
+  color: $black;
+  font-size: 23px;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(10px, 8px);
+  transition: all .3s ease;
+}
