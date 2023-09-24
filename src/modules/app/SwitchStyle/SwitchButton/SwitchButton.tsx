@@ -15,5 +15,8 @@ export const SwitchButton = ({isRight, appSection}: SwitchButtonProps) => {
         [styles.cpRight]: isRight && isCp,
     })
 
-    return <button className={className}></button>
+    return <button className={className}>
+        {isCp && !isRight && <i className="fa-solid fa-chevron-left"></i> }
+        {isCp && isRight && <i className="fa-solid fa-chevron-right"></i> }
+    </button>
 }
