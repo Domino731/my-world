@@ -1,0 +1,29 @@
+@import "../../../cyberpunk/variables";
+
+// BASE STYLES
+.button {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  border: none;
+  outline: none;
+}
+.right {
+  right: 0;
+}
+.left {
+  left: 0;
+}
+
+// CYBERPUNK STYLES
+.cpButton {
+  background: $yellow;
+}
+
+.cpRight {
+  clip-path: polygon(0% calc(100% - 12px), 12px 100%, 100% 100%, 100% 0%, 12px 0%, 0% 12px)
+}
+
+.cpLeft {
+  clip-path: polygon(0% 100%, calc(100% - 12px) 100%, 100% calc(100% - 12px), 100% 12px, calc(100% - 12px) 0%, 0% 0%);
+}

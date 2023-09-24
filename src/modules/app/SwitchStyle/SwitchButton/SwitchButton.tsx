@@ -1,0 +1,19 @@
+import styles from "./styles.module.scss";
+import {SwitchButtonProps} from "./SwitchButton.types.ts";
+import * as classNames from "classnames";
+import {APP_SECTIONS} from "../../App.types.ts";
+
+export const SwitchButton = ({isRight, appSection}: SwitchButtonProps) => {
+
+    const isCp =  appSection === APP_SECTIONS.CP
+
+    const className = classNames(styles.button, {
+        [styles.left]: !isRight,
+        [styles.right]: isRight,
+        [styles.cpButton]: isCp,
+        [styles.cpLeft]: !isRight && isCp,
+        [styles.cpRight]: isRight && isCp,
+    })
+
+    return <button className={className}></button>
+}
