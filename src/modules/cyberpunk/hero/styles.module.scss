@@ -32,17 +32,28 @@
   }
 }
 
-.title {
+.titleWrapper {
   font-weight: 600;
-  font-size: 112px;
+ display: flex;
   color: $white;
       left: 50%;
     position: absolute;
     text-align: center;
     top: 60%;
     transform: translate(-50%,-50%);
-    width: 100%;
+    max-width: 1800px;
+  width: 100%;
     z-index: 3;
+}
+
+.title {
+  flex-grow: 1;
+  font-size: 0;
+  background: url(../../../assets/cyberpunk/images/full-stack-developer.png);
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .image {
