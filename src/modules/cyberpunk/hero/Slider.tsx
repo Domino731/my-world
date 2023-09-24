@@ -3,6 +3,9 @@ import { Carousel } from 'react-responsive-carousel';
 import styles from "./sliderStyles.module.scss";
 import ambitiousImg from "../../../assets/cyberpunk/images/ambitious.png";
 import creativeImg from "../../../assets/cyberpunk/images/creative.png";
+import responsibleImg from "../../../assets/cyberpunk/images/responsible.png";
+import teamPlayerImg from "../../../assets/cyberpunk/images/team-player.png";
+import confidentImg from "../../../assets/cyberpunk/images/confident.png"
 
 export const Slider = () => {
 
@@ -13,6 +16,18 @@ export const Slider = () => {
         {
             title: 'Creative',
             img: creativeImg
+        },
+        {
+            title: 'Responsible',
+            img: responsibleImg
+        },
+        {
+            title: 'Team Player',
+            img: teamPlayerImg
+        },
+        {
+            title: 'Confident',
+            img: confidentImg
         }
     ];
 
@@ -29,7 +44,12 @@ export const Slider = () => {
             axis='vertical'
         >
                 {data.map((word, index) => (
-                    <div key={index}><img src={word.img} className={styles.image}/></div>
+                    <div key={index} className={styles.sliderItem}>
+                       <div className={styles.title}>
+                           {word.title}
+                       <img src={word.img}/>
+                       </div>
+                    </div>
                 ))}
             </Carousel>
         </div>
