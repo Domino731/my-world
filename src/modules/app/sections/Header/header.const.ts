@@ -1,5 +1,6 @@
 import {HeaderOption} from "./header.types.ts";
 
+// TODO: add correct href
 export const headerOptions: Array<HeaderOption> = [
     {
         label: "About",
@@ -14,7 +15,7 @@ export const headerOptions: Array<HeaderOption> = [
         href: "#"
     },
     {
-        label: "Contact.tsx",
+        label: "Contact",
         href: "#"
     },
 ]
