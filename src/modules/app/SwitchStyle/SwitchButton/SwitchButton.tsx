@@ -8,8 +8,10 @@ export const SwitchButton = ({isRight, appSection}: SwitchButtonProps) => {
     const isCp =  appSection === APP_SECTIONS.CP
 
     const className = classNames(styles.button, {
+        // GENERAL STYLES
         [styles.left]: !isRight,
         [styles.right]: isRight,
+        // CYBERPUNK STYLES
         [styles.cpButton]: isCp,
         [styles.cpLeft]: !isRight && isCp,
         [styles.cpRight]: isRight && isCp,
