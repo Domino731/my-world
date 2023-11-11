@@ -7,7 +7,7 @@ import {DataHeader} from "../components/DataHeader";
 import {commercialProjects} from "../../app/sections/Projects/Projects.const.ts";
 
 export const CpProjects = () => {
-    return <section className={styles.container}>
+    return <div className={styles.container}>
         <div className={styles.divider}>
             <span/>
             <span/>
@@ -59,5 +59,5 @@ export const CpProjects = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 }
