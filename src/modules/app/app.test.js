@@ -1,4 +1,4 @@
-import {APP_SECTION_NAMES, APP_SECTIONS_ORDER} from "./App.const.js";
+import {APP_SECTION_NAMES, APP_SECTIONS_ORDER} from "./App.const.ts";
 
 describe('Check if APP_SECTIONS_ORDER array contains all items from APP_SECTION_NAMES enum ', () => {
     it('contains all items from APP_SECTION_NAMES enum', () => {
