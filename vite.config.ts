@@ -1,9 +1,9 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
-import {createTsJestConfig} from './jest.config';
+// import {createTsJestConfig} from './jest.config';
 
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
-    ...createTsJestConfig(),
+    // ...createTsJestConfig(),
 })
